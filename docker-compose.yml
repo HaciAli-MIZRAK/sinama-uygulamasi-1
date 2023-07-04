@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  app:
+    build: ./
+    ports:
+      - "8000:8000"
+    links:
+      - mysql
+    depends_on:
+      - mysql
+    volumes:
+      - ./app:/var/www/laravel
+  mysql:
+    image: mysql
+    ports:
+      - "3306:3306"
+    expose:
+      - "3306"
+    volumes:
+      - ./server/volumes/mysql:/var/lib/mysql
+volumes:
+  mysql:

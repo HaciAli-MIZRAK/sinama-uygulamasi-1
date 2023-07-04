@@ -10,7 +10,7 @@ use SAPP\APP1\Console\DBCreateSystem;
 
 class AppxServiceProvider extends ServiceProvider {
 
-    protected $ipAddress   = '192.168.1.102';
+    protected $ipAddress   = '192.168.1.141';
     protected $dbName      = 'admin_app1';
     protected $userName    = 'mizrak';
     protected $dbPassword  = '123456';
