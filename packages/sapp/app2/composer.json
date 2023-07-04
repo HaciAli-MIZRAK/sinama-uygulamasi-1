@@ -1,6 +1,6 @@
 {
-    "name": "sapp/app1",
-    "description": "test Proje",
+    "name": "sapp/app2",
+    "description": "test2 Proje",
     "type": "library",
     "minimum-stability": "0.0",
     "license": "MIT",
@@ -11,15 +11,11 @@
         }
     ],
     "require": {
-        "php": "^8.0|^8.0.2|8.0.14|^8.1|^8.2",
-        "laravel/passport": "^11.8.5.0",
-        "maatwebsite/excel": "^3.1",
-        "yajra/laravel-datatables-oracle": "^10.4",
-        "litespeed/lscache-laravel": "^1.3.5"
+        "php": "^8.0|^8.0.2|8.0.14|^8.1|^8.2"
     },
     "autoload": {
         "psr-4": {
-            "SAPP\\APP1\\": "src/"
+            "SAPP\\APP2\\": "src/"
         },
         "files": [
             "Helpers/GlobalHelpers.php",
@@ -29,10 +25,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "SAPP\\APP1\\AppxServiceProvider"
+              "SAPP\\APP2\\App2ServiceProvider"
             ],
             "aliases": {
-                "Debugbar": "SAPP\\APP1\\Facade"
+                "Debugbar": "SAPP\\APP2\\Facade"
             }
         }
     }

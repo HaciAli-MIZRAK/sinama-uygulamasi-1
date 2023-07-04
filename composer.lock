@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fae2f6e45c57653b03ed35a8b7368517",
+    "content-hash": "8f135d5b047849c4ab74e3e375bc0889",
     "packages": [
         {
             "name": "brick/math",
@@ -4970,7 +4970,7 @@
             "dist": {
                 "type": "path",
                 "url": "packages/sapp/app1",
-                "reference": "b122d11c2e43c2631ac05a8ea176fadcd6aa6e67"
+                "reference": "881fc8bb7c59841de2d38f3bb0a16a132ee587ce"
             },
             "require": {
                 "laravel/passport": "^11.8.5.0",
@@ -5009,6 +5009,51 @@
                 }
             ],
             "description": "test Proje",
+            "transport-options": {
+                "relative": true
+            }
+        },
+        {
+            "name": "sapp/app2",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "packages/sapp/app2",
+                "reference": "4ec106a13bcd168f02eed37912fa63a86f65bbe3"
+            },
+            "require": {
+                "php": "^8.0|^8.0.2|8.0.14|^8.1|^8.2"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "SAPP\\APP2\\App2ServiceProvider"
+                    ],
+                    "aliases": {
+                        "Debugbar": "SAPP\\APP2\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SAPP\\APP2\\": "src/"
+                },
+                "files": [
+                    "Helpers/GlobalHelpers.php",
+                    "Libraries/GlobaLibraries.php"
+                ]
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Hacı Ali MIZRAK",
+                    "email": "info@veritakip.net"
+                }
+            ],
+            "description": "test2 Proje",
             "transport-options": {
                 "relative": true
             }
@@ -10127,7 +10172,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "sapp/app1": 20
+        "sapp/app1": 20,
+        "sapp/app2": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
