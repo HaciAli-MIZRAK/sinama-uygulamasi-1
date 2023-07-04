@@ -12,7 +12,7 @@
 - <b>NOT:</b> Laravel 10 ile Pasport eklentisi son sürümde bir kurulum sorunu var bununla zaman kaybetmemek adına test için kullandığım bir paketim vardı onun içindeki passport eklentisini kullandım.
 
 - Proje oluşturuldu paket haline getirildi ve laravel sistemine dahil edildi.
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
+  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
 
 - Paket özel bağımlılıkların yüklenmesi için composer.json dosyasına eklendi
   <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-2.png" width="400" alt="Laravel Logo">
@@ -21,7 +21,7 @@
   <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-3.png" width="400" alt="Laravel Logo">
 
 - Oluşturulan db mysql de göründü
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
+  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
 
 - Proje Docker üzerinde çalışacak şekilde yapılandırıldı.
   <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
