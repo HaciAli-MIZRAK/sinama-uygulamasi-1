@@ -9,6 +9,7 @@ packages klasörü içine eklenen klasörler için gerekli class ve dosyalar olu
 Api tarafı için kullanıcı girişi ve kaydı için gerekli yapı kuruldu. (Laravel Passport kullanıyorum buna göre yapılandırdım)
 Oluşturulan alt paketlerin okunması ve projeye dahil edilmesi için composer.json dosyasına packet yolu eklendi.
 
+Laravel 10 ile Pasport eklentisi son sürümde bir kurulum sorunu var bununla zaman kaybetmemek adına test için kullandığım bir paketim vardı onun içindeki passport eklentisini kullandım.
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
