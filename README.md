@@ -12,19 +12,24 @@
 - <b>NOT:</b> Laravel 10 ile Pasport eklentisi son sürümde bir kurulum sorunu var bununla zaman kaybetmemek adına test için kullandığım bir paketim vardı onun içindeki passport eklentisini kullandım.
 
 - Proje oluşturuldu paket haline getirildi ve laravel sistemine dahil edildi.
-  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
 
-- Paket özel bağımlılıkların yüklenmesi için composer.json dosyasına eklendi
-  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-2.png" width="400" alt="Laravel Logo">
+<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
+
+- Paket özel bağımlılıkların yüklenmesi için composer.json dosyasına eklendi.
+
+<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-2.png" width="400" alt="Laravel Logo">
 
 - Proje için laravel üzerinden db oluşturma işlemi yapıldı.
-  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-3.png" width="400" alt="Laravel Logo">
 
-- Oluşturulan db mysql de göründü
-  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
+<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-3.png" width="400" alt="Laravel Logo">
+
+- Oluşturulan db mysql de göründü.
+
+<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
 
 - Proje Docker üzerinde çalışacak şekilde yapılandırıldı.
-  <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
+
+<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
