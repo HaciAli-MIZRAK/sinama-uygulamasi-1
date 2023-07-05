@@ -43,6 +43,9 @@
 
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-8.png" width="400" alt="Laravel Logo">
 
+- Projeye ilk kullanıcı girişi yapıldı.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-9.png" width="400" alt="Laravel Logo">
 
 
 ## Porje Takibi için yayınlandığı domain.
