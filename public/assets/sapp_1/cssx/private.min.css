@@ -1,0 +1,67 @@
+@media (max-width: 991px) {
+    .mobile-toggle-menu-bar {
+        margin-right: 55px !important;
+    }
+    .mobile-top-menu {
+        padding-top: 1px !important;
+        margin-right: -10px !important;
+    }
+    .mobile-top-menu-ul {
+        margin-top: -50px !important;
+    }
+    .page-quick-sidebar-open .page-sidebar-wrapper {
+        transition: left.3s!important;
+        left: 0!important;
+        top: 50px !important;
+    }
+    .page-sidebar-wrapper {
+        transition: left .3s !important;
+        z-index: 10500 !important;
+        position: fixed !important;
+        top: 50px !important;
+        bottom: 0 !important;
+        width: 320px !important;
+        left: -320px !important;
+        overflow: hidden !important;
+        color: #99a8b5 !important;
+        background: #21282e !important;
+    }
+}
+.page-header.navbar .top-menu .navbar-nav {
+    padding: 0;
+    margin-right: 1px;
+    display: block;
+}
+.dataTables-checked {
+    width: 0px !important;
+}
+.dataTables-options {
+    width: 100px !important;    
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* datatables işlemler menüsü */
+.table-scrollable .dataTable td>.btn-group, .table-scrollable .dataTable th>.btn-group {
+    position: absolute !important;
+    right: 15px !important;
+    margin-top: -5px !important;
+}
+
+/* -------------------------------------------------------------------------- */
+/* swertAlert zindex işlemi */
+.swal2-container {
+    z-index: 11000;
+}
+
+/* -------------------------------------------------------------------------- */
+.portlet.light.portlet-fit>.portlet-title {
+    padding: 15px 5px 10px;
+}
+
+
+.disabledbutton {
+    pointer-events: none;
+    opacity: 0.4;
+}

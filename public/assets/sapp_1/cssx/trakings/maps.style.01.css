@@ -1,0 +1,1249 @@
+
+.mapsSelectPosition {
+    z-index: 10001 !important;
+    position: absolute !important;
+    left: -136px !important;
+}
+
+.leaflet-top .leaflet-control {
+    margin-left: 0px !important;
+}
+
+.leftPlateLists {
+    position: fixed !important;
+    width: 133px !important;
+    z-index: 5 !important;
+}
+
+.additional-panele {
+    position: fixed !important; 
+    left: -183px !important;
+    z-index: 1 !important;
+}
+.left-plate-lists:hover>.additional-panele {    
+    transition: left .5s !important;
+    position: fixed !important;   
+    top: 110px !important;
+    bottom: 0 !important;
+    width: auto;    
+    left: 136px !important;
+    z-index: 1 !important;    
+}
+.left-plate-lists>.additional-panele {
+    transition: left .9s !important;
+    position: fixed !important; 
+    left: -182px !important;    
+    z-index: 1 !important;
+}
+
+.left-group-lists {
+    /*width: 185px !important;*/
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+.left-group-lists .panel-group {
+    margin-bottom: 0px !important;
+}
+.left-group-lists .panel-title {
+    margin-top: 0 !important;
+    font-size: .9em !important;
+    color: #222222 !important;    
+}
+
+.left-group-lists .panel-title>a {
+    padding-top: 8px !important;
+    padding-left: 5px !important;
+    padding-bottom: 8px !important;
+}
+.left-group-lists .list-group {
+    margin-bottom: 0px !important;
+}
+
+.left-plate-lists {
+    width: auto;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+.left-plate-lists .panel-group {
+    width: auto;
+    margin-bottom: 0px !important;
+}
+.left-plate-lists .panel-title {
+    margin-top: 0 !important;
+    font-size: .9em !important;
+    color: #222222 !important;    
+}
+
+.left-plate-lists .panel-title>a {
+    padding-top: 8px !important;
+    padding-left: 5px !important;
+    padding-bottom: 8px !important;
+}
+.left-plate-lists .list-group {
+    margin-bottom: 0px !important;
+}
+
+.left-status-lists {
+    width: 185px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+.left-status-lists .panel-group {
+    margin-bottom: 0px !important;
+}
+.left-status-lists .panel-title {
+    margin-top: 0 !important;
+    font-size: .9em !important;
+    color: #222222 !important;    
+}
+
+.left-status-lists .panel-title>a {
+    padding-top: 8px !important;
+    padding-left: 5px !important;
+    padding-bottom: 8px !important;
+}
+
+
+.dashboardSortPage {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.vehicleInfo-title-dropdown {    
+    display: block;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+}
+
+
+td.vehicleInfoText {
+    display: block;
+    margin-top: 1px !important;
+    margin-bottom: 2px !important;
+    padding-top: 1px !important;
+    padding-left: 15px !important;
+    padding-bottom: 2px !important;
+    font-weight: 700px !important;
+}
+.right-dashboard-panele {
+    display: block;
+    padding: 0px !important;
+}
+
+.portlet.light {
+    opacity: 0.7;
+}
+
+.portlet {
+    margin-bottom: 1px !important;
+}
+
+/*#gauge {
+    height: 155px !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}*/
+
+button:hover { color: #ffffff!important; background-color: #f2784b!important; }
+button:focus { color: #ffffff!important; background-color: #f2784b!important; }
+button:after { color: #ffffff!important; background-color: #f2784b!important; }
+
+.marker-hidden {
+    opacity: 0 !important;
+}
+
+.panel-move-icon {    
+    margin-right: -10px !important;
+    padding-right: -10px !important;
+}
+
+@media (min-width:360px) and (max-width:950px) {
+    .right-dashboard-panele {
+        display: none;
+        width: 330px !important;
+        height: auto;
+/*        overflow: hidden !important; */
+        padding: 0px !important;
+    }
+    .scroolbar {        
+        height: 350px !important;
+        padding-top: 0px !important;
+        overflow-y: scroll !important;
+    }
+}
+@media (min-width:951px) {
+    .right-dashboard-panele {
+        display: none;
+        width: 370px !important;
+        height: auto;
+/*        overflow: hidden !important; */
+        padding: 0px !important;
+    }
+    .scroolbar {       
+/*        height: 400px !important;*/
+        padding-top: 0px !important;
+        overflow-y: scroll !important;
+    }
+}
+
+.scroolBarTop {   
+    width: auto !important;
+    height: 250px !important;
+    padding-top: 0px !important;
+    overflow: hidden !important;
+    overflow-y: scroll !important;
+}
+
+.leaflet-panel-layers-title {
+    background: #555555 !important;
+    color: #ffffff !important;
+    opacity: 0,9 !important;
+}
+
+#maps-panele {
+    left: 0;
+    top: 0;
+    min-height: 854px;
+    width: 100%;
+    border-top: 5px red solid;
+    position: absolute;
+}
+#myBar {
+    position: fixed;
+    top: 50px;
+    width: 0.1%;
+    height: 5px;
+    background-color: #4CAF50;
+    z-index: 401;
+}
+/*.css-icon {
+
+}*/
+
+.gps_ring { 
+    border: 3px solid red;
+    -webkit-border-radius: 50px;
+    height: 58px;
+    width: 58px;       
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite; 
+    /*opacity: 0.0*/
+}
+
+@-webkit-keyframes pulsate {
+    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+    50% {opacity: 1.0;}
+    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
+}
+
+/**
+ * Marker Style Kontak On veya Off
+ */
+/* Hareketli Cihazlar için */
+.markers-radius1-green {
+    animation: 2.2s ease-in-out 0s normal none infinite running kmacb-circle-anim !important;
+    background-color: transparent;
+    border: 2px solid #26C281!important;
+    border-radius: 100% !important;
+    height: 60px;
+    opacity: 0.35;
+    position: absolute;
+    width: 60px;
+}
+/* Park Halindeki Cihazlar için */
+.markers-radius1-red {
+    animation: 2.2s ease-in-out 0s normal none infinite running kmacb-circle-anim !important;
+    background-color: transparent;
+    border: 2px solid #D91E18!important;
+    border-radius: 100% !important;
+    height: 60px;
+    opacity: 0.35;
+    position: absolute;
+    width: 60px;
+}
+/* Rolantideki Cihazlar için */
+.markers-radius1-orange {
+    animation: 2.2s ease-in-out 0s normal none infinite running kmacb-circle-anim !important;
+    background-color: transparent;
+    border: 2px solid #E87E04!important;
+    border-radius: 100% !important;
+    height: 60px;
+    opacity: 0.35;
+    position: absolute;
+    width: 60px;
+}
+/* Offline Cihazlar için */
+.markers-radius1-gray {
+    animation: 2.2s ease-in-out 0s normal none infinite running kmacb-circle-anim !important;
+    background-color: transparent;
+    border: 2px solid #555!important;
+    border-radius: 100% !important;
+    height: 60px;
+    opacity: 0.35;
+    position: absolute;
+    width: 60px;
+}
+/* Dış Çemberimiz */
+@keyframes kmacb-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.6;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+@keyframes kmacb-circle-anim {
+    0% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(0.5) skew(1deg);
+    }
+    30% {
+        opacity: 0.5;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    100% {
+        opacity: 0.1;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+}
+/* Orta Dolğumuz */
+/* Hareketli Cihazlar için */
+.markers-radius2-green {
+    animation: 2.3s ease-in-out 0s normal none infinite running kmacb-circle-fill-anim !important;
+    background: #26C281 none repeat scroll 0 0;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 36px;
+    left: 12px;
+    opacity: 0.24;
+    position: absolute;
+    top: 12px;
+    width: 36px;
+}
+/* Park Halindeki Cihazlar için */
+.markers-radius2-red {
+    animation: 2.3s ease-in-out 0s normal none infinite running kmacb-circle-fill-anim !important;
+    background: #D91E18 none repeat scroll 0 0;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 36px;
+    left: 12px;
+    opacity: 0.24;
+    position: absolute;
+    top: 12px;
+    width: 36px;
+}
+/* Rolantideki Cihazlar için */
+.markers-radius2-orange {
+    animation: 2.3s ease-in-out 0s normal none infinite running kmacb-circle-fill-anim !important;
+    background: #E87E04 none repeat scroll 0 0;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 36px;
+    left: 12px;
+    opacity: 0.24;
+    position: absolute;
+    top: 12px;
+    width: 36px;
+}
+/* Offline Cihazlar için */
+.markers-radius2-gray {
+    animation: 2.3s ease-in-out 0s normal none infinite running kmacb-circle-fill-anim !important;
+    background: #555 none repeat scroll 0 0;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 36px;
+    left: 12px;
+    opacity: 0.24;
+    position: absolute;
+    top: 12px;
+    width: 36px;
+}
+@keyframes kmacb-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}
+@keyframes kmacb-circle-fill-anim {
+    0% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+    50% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(1) skew(1deg);
+    }
+    100% {
+        opacity: 0.2;
+        transform: rotate(0deg) scale(0.7) skew(1deg);
+    }
+}
+/* Basit vhicle icon */
+/* Hareketli Cihazlar için */
+.vehicle-markers-green {
+    animation: 1s ease-in-out 0s normal none infinite running kmacb-circle-img-anim;
+    background: #26C281!important;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 20px;
+    left: 20px;
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    transform-origin: 50% 50% 0;
+    width: 20px;
+}
+/* Park Halindeki Cihazlar için */
+.vehicle-markers-red {
+    animation: 1s ease-in-out 0s normal none infinite running kmacb-circle-img-anim;
+    background: #D91E18!important;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 20px;
+    left: 20px;
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    transform-origin: 50% 50% 0;
+    width: 20px;
+}
+/* Rolantideki Cihazlar için */
+.vehicle-markers-orange {
+    animation: 1s ease-in-out 0s normal none infinite running kmacb-circle-img-anim;
+    background: #E87E04!important;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 20px;
+    left: 20px;
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    transform-origin: 50% 50% 0;
+    width: 20px;
+}
+/* Offline Cihazlar için */
+.vehicle-markers-gray {
+    animation: 1s ease-in-out 0s normal none infinite running kmacb-circle-img-anim;
+    background: #555!important;
+    border: 2px solid transparent;
+    border-radius: 100% !important;
+    height: 20px;
+    left: 20px;
+    opacity: 0.8;
+    position: absolute;
+    top: 20px;
+    transform-origin: 50% 50% 0;
+    width: 20px;
+}
+/* vehicle font-icon rotate */
+.font-icon-rotate {
+    display: block;
+    position: absolute;
+    left: 2.5px;
+}
+
+/**
+ * buradan itibaren haraketli araç ikonu style
+ */	
+.marker-outer-border {
+    animation-name: spin-1;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-color: transparent;
+    border-left: 1px transparent solid;
+    border-right: 1px transparent solid;
+    border-radius: 100% !important;
+    height: 60px;
+    opacity: 0.70;
+    position: absolute;
+    width: 60px;
+    top: 10px;
+    left: 66px;
+}
+.marker-inner-border {
+    animation-name: spin-2;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-top: 1px transparent solid;
+    border-bottom: 1px transparent solid;
+    border-radius: 100% !important;
+    height: 36px;
+    left: 12px;
+    opacity: 0.70;
+    position: absolute;
+    top: 22px;
+    left: 77.5px;
+    width: 36px;
+}
+@keyframes spin-1 {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(90deg);
+    }
+    100% {
+        transform:rotate(0deg);
+    }
+}
+@keyframes spin-2 {
+    0% {
+        transform:rotate(90deg);
+    }
+    50% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(90deg);
+    }
+}
+
+/* Sağ Panel için Class olarak Tanımlıyoruz. */
+.plate-0 {
+    color: #D91E18!important;
+}
+.plate-1 {
+    color: #E87E04!important;
+}
+.plate-2 {
+    color: #26C281!important;
+}
+.plate-9 {
+    color: #555!important;
+}
+/* -------------------------------------------------------------------------- */
+#plate-0 {
+    border-left: 5px #D91E18 solid!important;
+}
+#plate-1 {
+    border-left: 5px #E87E04 solid!important;
+}
+#plate-2 {
+    border-left: 5px #26C281 solid!important;
+}
+#plate-9 {
+    border-left: 5px #555 solid!important;
+}
+#status-2 {
+    border-left: 5px #26C281 solid!important;
+}
+#status-0 {
+    border-left: 5px #D91E18 solid!important;
+}
+#status-1 {
+    border-left: 5px #E87E04 solid!important;
+}
+#status-9 {
+    border-left: 5px #555 solid!important;
+}
+#status-x {
+    border-left: 5px #bfcad1 solid!important;
+}
+#status-speed {
+    color: #ffffff!important;
+    border-left: 5px #D91E18 solid!important;
+    background: #D05454 !important;
+}
+
+
+
+.left-status-lists {
+    display: block;    
+    min-width: 93% !important;
+    opacity: 0.9 !important;
+    padding: 1px !important;
+}
+
+/* ========================================================================== */
+
+/* Harita Panelde Listemizi Ekliyoruz. */
+.left-plate-lists {
+    display: block;    
+/*    min-width: 93% !important;*/
+/*    opacity: 0.9 !important;*/
+    padding: 1px !important;
+}
+/* Liste Başlığı */
+.leaflet-panel-layers-title {
+    display: block;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    margin-bottom: 1px !important;
+    font-size: 1.1em;
+    font-weight: bold !important;
+    opacity: 0.9 !important;
+}
+/* Scrollbar */
+.div-left-plate {
+    float: left;
+    height: 300px;
+    width: 100%;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 3px;
+    padding: 1px;
+}
+
+.button-left-plate {
+    border: none;
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+    background: #ffffff;
+    color: #222222;
+    border: 1px #d5d5d5 solid;
+    border-left: 5px #ffffff solid;
+}
+
+/* Araçların Durum Bilgisini Gösterdiğimiz Alan*/
+.button-left-status {
+    border: none;
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+    background: #ffffff;
+    color: #222222;
+    border: 1px #d5d5d5 solid;
+}
+.button-left-status-speed {
+    border: none;
+    display: block;
+    margin-bottom: 4px;
+    width: 100%;
+    background: #ffffff;
+    color: #222222;
+    border: 1px #d5d5d5 solid;
+}
+/* plaka listesi özel scrollbar*/ 
+.div-left-plate::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #F5F5F5;
+}
+
+.div-left-plate::-webkit-scrollbar {
+    width: 10px;
+    background-color: #555555;
+}
+
+.div-left-plate::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1.5px solid #555555;
+}
+.search-tooltip::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #555555;
+}
+
+.search-tooltip::-webkit-scrollbar {
+    width: 10px;
+    background-color: #555555;
+}
+
+.search-tooltip::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1.5px solid #555555;
+}
+
+/* Sağ Grafik Paneli */
+.page-quick-sidebar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2b3643;
+}
+
+.page-quick-sidebar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2b3643;
+}
+
+.page-quick-sidebar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1.5px solid #2b3643;
+}
+
+/* detay dashboard */
+.scroolbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2b3643;
+}
+
+.scroolbar::-webkit-scrollbar {
+    width: 10px;
+    background-color: #2b3643;
+}
+
+.scroolbar::-webkit-scrollbar-thumb {
+    background-color: #000000;
+    border: 1.5px solid #2b3643;
+}
+
+/* begin header dropmenü */
+.scroolBarTop::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #2b3643;
+}
+
+.scroolBarTop::-webkit-scrollbar {
+    width: 2px;
+    background-color: #2b3643;
+}
+
+.scroolBarTop::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border: 1.5px solid #2b3643;
+}
+
+/* Grup Tab Menü Scrollbar */
+.plateScrollBar {
+    width: auto !important;
+    padding-top: 0px !important;
+    overflow: hidden !important;
+    overflow-y: scroll !important;
+}
+
+
+
+.plateScrollBar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    background-color: transparent;
+}
+
+.plateScrollBar::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.plateScrollBar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 1.5px solid transparent;
+}
+/* Grup Tab Menü Scrollbar */
+.groupScrollBar {
+    width: auto !important;
+    padding-top: 0px !important;
+    overflow: hidden !important;
+    overflow-y: scroll !important;
+}
+
+.groupScrollBar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
+    background-color: transparent;
+}
+
+.groupScrollBar::-webkit-scrollbar {
+    width: 0px;
+    background-color: transparent;
+}
+
+.groupScrollBar::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border: 1.5px solid transparent;
+}
+
+/* ========================================================================== */
+
+
+
+
+/* ########################################################################## */
+@media (min-width:951px) {
+    #gauge-container {
+        margin: 0 auto !important;
+        overflow: hidden !important;
+        width: 392px !important;
+        height: 180px !important;
+        padding-left: 18px !important;
+        background: #222222 !important;
+
+    }
+    .k-gauge {
+        float: left !important;
+    }
+    #rpm {
+        width: 142px !important;
+        height: 147px !important;
+        transform: rotate(330deg) !important;
+        margin: 18px 0 0 -18px !important;
+    }
+
+    .rpm-text {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 0.8em !important;
+        margin: 107px 0px 0px 28px !important;
+        opacity: 0.4;
+    }
+
+    #kmh {
+        width: 216px !important;
+        height: 216px !important;
+        margin: -20px 0 0 -49px !important;
+    }
+
+    .km-text {
+        position: absolute !important;  
+        width: 100px !important;
+        color: #ffffff !important;
+        font-size: 0.8em !important;
+        margin: 142px 0px 0px 130px !important;
+    }
+
+    #fuel {
+        width: 77px !important;
+        height: 84px !important;
+        margin: 10px 0 0 -9px !important;
+    }
+    .fuel-icons {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 1.0em !important;
+        margin: 57px 0px 0px -72px !important;
+        opacity: 0.6;
+    }
+    .fuel-iconsx {
+        position: absolute !important;
+        color: #E87E04 !important;
+        font-size: 1.0em !important;
+        margin: 57px 0px 0px -72px !important;
+        opacity: 1;
+    }
+    #water-temprature {
+        width: 84px !important;
+        height: 80px !important;
+        margin: 80px 0 0 -83px !important;
+    }
+    .water-icons {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 1.2em !important;
+        margin: 110px 0px 0px -69px !important;
+        opacity: 0.6;
+    }
+}
+@media (min-width:360px) and (max-width:950px) {
+    #gauge-container {
+        margin: 0 auto !important;
+        overflow: hidden !important;
+        width: 392px !important;
+        height: 143px !important;
+        padding-left: 18px !important;
+        background: #222222 !important;
+
+    }
+    .k-gauge {
+        float: left !important;
+    }
+    #rpm {
+        width: 122px !important;
+        height: 127px !important;
+        transform: rotate(330deg) !important;
+        margin: 18px 18px 0 -18px !important;
+    }
+
+    .rpm-text {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 0.8em !important;
+        margin: 83px 0px 0px 25px !important;
+        opacity: 0.4;
+    }
+
+    #kmh {
+        width: 180px !important;
+        height: 180px !important;
+        margin: -20px 0 0 -49px !important;
+    }
+
+    .km-text {
+        position: absolute !important;  
+        width: 100px !important;
+        color: #ffffff !important;
+        font-size: 0.8em !important;
+        margin: 102px 0px 0px 105px !important;
+    }
+
+    #fuel {
+        width: 67px !important;
+        height: 74px !important;
+        margin: 12px 0 0 0px !important;
+    }
+    .fuel-icons {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 1.0em !important;
+        margin: 57px 0px 0px -72px !important;
+        opacity: 0.6;
+    }
+    .fuel-iconsx {
+        position: absolute !important;
+        color: #E87E04 !important;
+        font-size: 1.0em !important;
+        margin: 57px 0px 0px -72px !important;
+        opacity: 1;
+    }
+    #water-temprature {
+        width: 74px !important;
+        height: 70px !important;
+        margin: 70px 0 0 -73px !important;
+    }
+    .water-icons {
+        position: absolute !important;
+        color: #ffffff !important;
+        font-size: 1.2em !important;
+        margin: 88px 0px 0px -73px !important;
+        opacity: 0.6;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* ==================== RIBBON LABEL ETIKET ================================= */
+/* -------------------------------------------------------------------------- */
+.ribbon-wrapper-green {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+.ribbon-green {
+    font: 10px Sans-Serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -29px;
+    top: 15px;
+    width: 120px;
+    background-color: #8dc735;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#8dc735), to(#649a12));
+    background-image: -webkit-linear-gradient(top, #8dc735, #649a12);
+    background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-green:after,
+.ribbon-green:after{
+    content: "";
+    border-top: 3px solid #6e8900;   
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+}
+
+.ribbon-green:before{
+    right: 0;
+}
+.ribbon-green:after{
+    left: 0;
+}
+/*-------------- KIRMIZI ETIKET --------------------------------------------- */
+.ribbon-wrapper-red {
+    width: 85px;
+    height: 88px;
+    overflow: hidden;
+    position: absolute;
+    top: -3px;
+    left: -3px;
+}
+
+.ribbon-red {
+    font: 10px Sans-Serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: rgba(255,255,255,0.5) 0px 1px 0px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    position: relative;
+    padding: 7px 0;
+    left: -29px;
+    top: 15px;
+    width: 120px;
+    background-color: #ea181e;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ea181e), to(#b90005));
+    background-image: -webkit-linear-gradient(top, #ea181e, #b90005);
+    background-image: -moz-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image: -ms-linear-gradient(top, #BFDC7A, #8EBF45);
+    background-image: -o-linear-gradient(top, #BFDC7A, #8EBF45);
+    color: #fff;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.3);
+}
+
+.ribbon-red:after,
+.ribbon-red:after{
+    content: "";
+    border-top: 3px solid #6e8900;   
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    position:absolute;
+    bottom: -3px;
+}
+
+.ribbon-red:before{
+    right: 0;
+}
+.ribbon-red:after{
+    left: 0;
+}
+
+
+.theme-mode, .theme-mode table, .theme-mode th, .theme-mode tr, .theme-mode input
+{
+    background-color: #2b3643 !important;
+}
+.theme-mode td,.theme-mode th, .theme-mode h4, .theme-mode button, .theme-mode input{
+    color: #c6cfda !important;
+}
+.theme-mode .table-hover>tbody>tr:hover, .theme-mode .table-hover>tbody>tr:hover>td
+{
+    background-color: #555014 !important;
+}
+.theme-mode .form-control, .theme-mode .dataTables_wrapper .dataTables_processing,
+.theme-mode utton.dt-button, .theme-mode div.dt-button, .theme-mode a.dt-button
+{
+    background-color: #3e3b14 !important;
+    color: white;
+}
+.theme-mode .table-bordered, .theme-mode .table-bordered>tbody>tr>td, .table-bordered>tbody>tr>th, .table-bordered>tfoot>tr>td, .table-bordered>tfoot>tr>th, .table-bordered>thead>tr>td, .table-bordered>thead>tr>th{
+    border: 1px solid #637b25;
+}
+.theme-mode table.dataTable.no-footer, 
+.theme-mode .table-scrollable {
+    border: 1px solid #637b25 !important;
+}
+.theme-mode .modal-header{
+    border-bottom:  1px solid #637b25 !important;
+}
+.theme-mode .modal-footer{
+    border-top: 1px solid #637b25 !important;
+}
+.theme-mode table.dataTable td.sorting_1, 
+.theme-mode table.dataTable td.sorting_2, 
+.theme-mode table.dataTable td.sorting_3, 
+.theme-mode table.dataTable th.sorting_1, 
+.theme-mode table.dataTable th.sorting_2, 
+.theme-mode table.dataTable th.sorting_3{
+    background: none!important;
+}
+.full-screen{
+    /*display: block!important;*/
+    width: 100%!important;
+    margin-top: 0px!important;
+    top: 0!important;
+    left: 0!important;
+    margin-left: 0!important;  
+    min-height: 100%;
+}
+
+.theme-mode .close{
+    color: white;
+    background: white;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-bottom;
+    background-position-x: center;
+    background-position-y: center;
+    border-radius: 8px;
+    display: block;
+    opacity: 1;
+}
+
+.leaflet-control {
+    cursor: pointer;
+}
+
+a.polyline-measure-controlOnBgColor, a.polyline-measure-controlOnBgColor:hover {
+    background-color: #8f8;
+}
+
+.polyline-measure-unicode-icon {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+a.polyline-measure-clearControl:active {
+    background-color: #f88;
+}
+
+.polyline-measure-tooltip {
+    font: 10px Arial, Helvetica, sans-serif;
+    line-height: 10px;
+    background-color: rgba(255, 255, 170, 0.7);
+    border-radius: 3px;
+    box-shadow: 1px 1px 4px #888;
+    margin: 0;
+    padding: 2px;
+    width: auto !important;
+    height: auto !important;
+    white-space: nowrap;
+    text-align: right;
+}
+
+.polyline-measure-tooltip-end {
+    background-color: rgba(255, 255, 40, 0.7);
+}
+
+.polyline-measure-tooltip-total {
+    color: #006;
+    font-weight: bold;
+}
+
+.polyline-measure-tooltip-difference {
+    color: #060;
+    font-style: italic;
+}
+
+.polyline-measure-popupTooltip {
+    font: 11px Arial, Helvetica, sans-serif;
+    line-height: 11px;
+}
+
+/* Full Screen Panel */
+.leaflet-control-fullscreen a {
+    background:#fff url(../../imgx/fullscreen.png) no-repeat 0 0;
+    background-size:26px 52px;
+}
+.leaflet-touch .leaflet-control-fullscreen a {
+    background-position: 2px 2px;
+}
+.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+    background-position:0 -26px;
+}
+.leaflet-touch.leaflet-fullscreen-on .leaflet-control-fullscreen a {
+    background-position: 2px -24px;
+}
+
+/* Do not combine these two rules; IE will break. */
+.leaflet-container:-webkit-full-screen {
+    width:100%!important;
+    height:100%!important;
+}
+.leaflet-container.leaflet-fullscreen-on {
+    width:100%!important;
+    height:100%!important;
+}
+
+.leaflet-pseudo-fullscreen {
+    position:fixed!important;
+    width:100%!important;
+    height:100%!important;
+    top:0!important;
+    left:0!important;
+    z-index:99999;
+}
+
+@media
+(-webkit-min-device-pixel-ratio:2),
+(min-resolution:192dpi) {
+    .leaflet-control-fullscreen a {
+        background-image:url(../../imgx/fullscreen@2x.png);
+    }
+}
+
+/* Marker Cluster */
+.leaflet-cluster-anim .leaflet-marker-icon, .leaflet-cluster-anim .leaflet-marker-shadow {
+    -webkit-transition: -webkit-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -moz-transition: -moz-transform 0.3s ease-out, opacity 0.3s ease-in;
+    -o-transition: -o-transform 0.3s ease-out, opacity 0.3s ease-in;
+    transition: transform 0.3s ease-out, opacity 0.3s ease-in;
+}
+
+.leaflet-cluster-spider-leg {
+    /* stroke-dashoffset (duration and function) should match with leaflet-marker-icon transform in order to track it exactly */
+    -webkit-transition: -webkit-stroke-dashoffset 0.3s ease-out, -webkit-stroke-opacity 0.3s ease-in;
+    -moz-transition: -moz-stroke-dashoffset 0.3s ease-out, -moz-stroke-opacity 0.3s ease-in;
+    -o-transition: -o-stroke-dashoffset 0.3s ease-out, -o-stroke-opacity 0.3s ease-in;
+    transition: stroke-dashoffset 0.3s ease-out, stroke-opacity 0.3s ease-in;
+}
+.marker-cluster-small {
+    background-color: rgba(181, 226, 140, 0.6);
+}
+.marker-cluster-small div {
+    background-color: rgba(110, 204, 57, 0.6);
+}
+
+.marker-cluster-medium {
+    background-color: rgba(241, 211, 87, 0.6);
+}
+.marker-cluster-medium div {
+    background-color: rgba(240, 194, 12, 0.6);
+}
+
+.marker-cluster-large {
+    background-color: rgba(253, 156, 115, 0.6);
+}
+.marker-cluster-large div {
+    background-color: rgba(241, 128, 23, 0.6);
+}
+
+/* IE 6-8 fallback colors */
+.leaflet-oldie .marker-cluster-small {
+    background-color: rgb(181, 226, 140);
+}
+.leaflet-oldie .marker-cluster-small div {
+    background-color: rgb(110, 204, 57);
+}
+
+.leaflet-oldie .marker-cluster-medium {
+    background-color: rgb(241, 211, 87);
+}
+.leaflet-oldie .marker-cluster-medium div {
+    background-color: rgb(240, 194, 12);
+}
+
+.leaflet-oldie .marker-cluster-large {
+    background-color: rgb(253, 156, 115);
+}
+.leaflet-oldie .marker-cluster-large div {
+    background-color: rgb(241, 128, 23);
+}
+
+.marker-cluster {
+    background-clip: padding-box;
+    border-radius: 20px !important;
+}
+.marker-cluster div {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+    text-align: center;
+    border-radius: 15px !important;
+    font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+.marker-cluster span {
+    line-height: 30px;
+}

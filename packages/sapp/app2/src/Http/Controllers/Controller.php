@@ -2,10 +2,12 @@
 
 namespace SAPP\APP2\Http\Controllers;
 
-use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+use Carbon\Carbon;
 use Illuminate\Foundation\Bus\DispatchesJobs;
-use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Foundation\Validation\ValidatesRequests;
+use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
+
 
 class Controller extends BaseController {
 
@@ -17,6 +19,16 @@ class Controller extends BaseController {
     protected $pageItems;
 
     public function __construct(  ) {
+
+        Carbon::setLocale(config('app.locale'));
+        /** Global Object Değişkenimiz **/
+        $this->pageItems = (object)[];
+
+        $this->pageItems->modulArray = [
+            'panel-header',
+            'left-side-menu'
+        ];
+        $this->pageItems->adminThemes = 'sapp_1';
 
     } /** end __construct(  ) **/
 
