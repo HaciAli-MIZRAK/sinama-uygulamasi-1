@@ -31,7 +31,7 @@ Route::prefix('api')->controller(AuthController::class)->group(function(  ) {
 /**
  * Bu Route ile konum ekleme, konum düzenleme ve listeleme linklerini oluşturuyoruz.
  */
-Route::prefix('api')->middleware('auth:api')->controller(LocationItemsController::class)->group(function(  ) {
+Route::prefix('api')/*->middleware('auth:api')*/->controller(LocationItemsController::class)->group(function(  ) {
 
     Route::post('/add-location', 'createLocation')->name('createLocation');
     Route::post('/edit-location', 'updateLocation')->name('updateLocation');

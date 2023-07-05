@@ -40,6 +40,10 @@
         <link href="{{ URL::asset( 'assets/sapp_1/cssx/jquery.notific8.min.css' ) }}" rel="stylesheet" type="text/css"/>
         <link href="{{ URL::asset( 'assets/sapp_1/cssx/trakings/maps.style.01.css' ) }}" rel="stylesheet" type="text/css"/>
         <link href="{{ URL::asset( 'assets/sapp_1/cssx/datatables.min.css' ) }}" rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
+
+
         <style>
             .panel {
                 background: transparent !important;
@@ -69,36 +73,12 @@
 
                 <div class="page-content-wrapper">
                     <div class="page-content">
-                        <div class="page-bar">
-                            <ul class="page-breadcrumb">
-                                <li>
-                                    <a href="{!! route( 'admin' ) !!}">
-                                        {!! _text( 'Yönetim Paneli' ) !!}
-                                    </a>
-                                    <i class="fa fa-circle"></i>
-                                </li>
-                                @if(request()->segment(2) != NULL && request()->segment(1) != 'edits')
-                                    <li>
-                                        <a href="javascript:;" class="pageTopTitle">
-                                            {!! _text( 'Anasayfa' ) !!}
-                                        </a>
-                                        <i class="fa fa-circle"></i>
-                                    </li>
-                                @endif
-                                <li>
-                                    <span class="pageTitle">{!! $pageItems->page_header->menu_title !!}</span>
-                                </li>
-                            </ul>
-                        </div>
 
                         @if(request()->segment(2) == NULL)
-                            <h1 class="page-title">
-                                {!! _text( 'Anasayfa' ) !!}
-                                <small>{!! _text( 'Anasayfa' ) !!}</small>
-                            </h1>
-
-                            <div class="page-content" id="maps-panele" style="margin: 0; padding: 0; margin-left: 0 !important;">
-                                <div id="myBar" style="width: 0;"></div>
+                            <div class="row">
+                                <div class="col-lg-12 col-xs-12 col-sm-12">
+                                    <div id="maps-panele"></div>
+                                </div>
                             </div>
 
                         @endif
@@ -156,10 +136,11 @@
 
         <!-- MAPS PANEL -->
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/leaflets/leaflet.js' ) }}" type="text/javascript"></script>
+        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.min.js"></script>
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/leaflets/Leaflet.fullscreen.min.js' ) }}" type="text/javascript"></script>
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/openLayer.libraries.01.js' ) . '?date=' . date('H-i') }}" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
-
 
         @if(request()->segment(2) != NULL && request()->segment(1) != 'edits')
             <script>

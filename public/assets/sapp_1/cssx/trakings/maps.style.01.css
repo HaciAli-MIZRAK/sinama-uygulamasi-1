@@ -202,12 +202,12 @@ button:after { color: #ffffff!important; background-color: #f2784b!important; }
 }
 
 #maps-panele {
-    left: 0;
-    top: 0;
+    left: -20px;
+    right: 0px;
+    top: -25px;
     min-height: 854px;
     width: 100%;
     border-top: 5px red solid;
-    position: absolute;
 }
 #myBar {
     position: fixed;

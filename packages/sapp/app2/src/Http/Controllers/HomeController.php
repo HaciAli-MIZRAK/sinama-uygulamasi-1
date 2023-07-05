@@ -31,7 +31,7 @@ class HomeController extends BaseController {
     public function index( Request $request, $item_slug = NULL ) {
 
         $this->pageItems->modules  = $this->pageItems->modulArray;
-        $this->pageItems->menus    = [];
+        $this->pageItems->menus    = $this->adminLeftMenu( $request );
         $this->pageItems->userInfo = UsersItems::where('id', 1)->first();
         if (!empty($item_slug) && $item_slug != ''):
             /** Alt Sayfalar **/

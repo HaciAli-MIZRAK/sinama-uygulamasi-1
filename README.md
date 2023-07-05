@@ -70,6 +70,15 @@
 
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-13.png" width="400" alt="Laravel Logo">
 
+## Harita arayüzü
+
+- Harita eklendi. yol tarifi için iki işlem yapılandırıldı.
+- 1. L.Routing.control ile iki konum ile haritaya çizidiriyoruz.
+- 2. L.Polyline ile backend tarafından çözümlediğimiz koordinatları çizidiriyoruz.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-14.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-15.png" width="400" alt="Laravel Logo">
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
