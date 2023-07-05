@@ -33,9 +33,9 @@ Route::prefix('api')->controller(AuthController::class)->group(function(  ) {
  */
 Route::prefix('api')->middleware('auth:api')->controller(LocationItemsController::class)->group(function(  ) {
 
-    Route::post('/add-location', 'createLocation')->name('createlocation');
-    Route::post('/edit-location', 'updateLocation')->name('updatelocation');
-    Route::post('/all-location-list', 'allListLocation')->name('alllistlocation');
+    Route::post('/add-location', 'createLocation');
+    Route::post('/edit-location', 'updateLocation');
+    Route::post('/all-location-list', 'allListLocation');
 
 });
 
@@ -46,8 +46,8 @@ Route::prefix('api')->middleware('auth:api')->controller(LocationItemsController
  */
 Route::prefix('api')->middleware('auth:api')->group(function(  ) {
 
-    Route::post('/user', function( Request $request ) {
+    Route::post('/userx', function( Request $request ) {
         return $request->user();
-    })->name('user');
+    })->name('userx');
 
 });

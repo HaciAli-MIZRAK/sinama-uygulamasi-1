@@ -45,6 +45,10 @@ class LocationItemsController extends BaseController {
      */
     public function allListLocation( Request $request ) {
 
+        $data = $this->locationItemsRepository->allListLocation( $request );
+
+        return datatables($data)->toJson();
+
     } /** end allListLocation( Request $request ) **/
 
     /** ------------------------------------------------------------------------------------------------------------ **/
