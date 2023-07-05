@@ -52,6 +52,20 @@
 
 <a href="https://crmx.com.tr/" target="_blank"><b>Canlı Takip Linki</b></a>
 
+## Konum Listesi, Konum Ekleme, Konum Düzenleme işlemleri
+
+- Eklenen Konumların Listelenmesi.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-10.png" width="400" alt="Laravel Logo">
+
+- Yeni Konum Ekleme.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-11.png" width="400" alt="Laravel Logo">
+
+- Mevcut Konumu Düzenleme.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-12.png" width="400" alt="Laravel Logo">
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 

@@ -15,8 +15,8 @@ return new class extends Migration {
             $table->id();
             $table->bigInteger( 'user_id' )->unsigned();
             $table->string('location_title')->index();
-            $table->decimal('longitude', 10, 7)->nullable()->index();
-            $table->decimal('latitude', 10, 7)->nullable()->index();
+            $table->double('longitude')->nullable()->index();
+            $table->double('latitude')->nullable()->index();
             $table->string('marker_colored')->nullable();;
             $table->timestamps();
         });

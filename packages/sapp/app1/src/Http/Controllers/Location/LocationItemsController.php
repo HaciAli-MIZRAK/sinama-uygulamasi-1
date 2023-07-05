@@ -58,6 +58,10 @@ class LocationItemsController extends BaseController {
      */
     public function createLocation( Request $request ) {
 
+        $data = $this->locationItemsRepository->createLocation( $request );
+
+        return response()->json($data);
+
     } /** end createLocation( Request $request ) **/
 
     /** ------------------------------------------------------------------------------------------------------------ **/
@@ -66,6 +70,10 @@ class LocationItemsController extends BaseController {
      * Bu function ile Mevcut Konumu Düzenliyoruz..
      */
     public function updateLocation( Request $request ) {
+
+        $data = $this->locationItemsRepository->updateLocation( $request );
+
+        return response()->json($data);
 
     } /** end updateLocation( Request $request ) **/
 

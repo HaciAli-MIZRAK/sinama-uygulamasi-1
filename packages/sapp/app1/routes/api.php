@@ -17,7 +17,7 @@ use SAPP\APP1\Http\Controllers\Location\LocationItemsController;
 */
 
 /**
- * Bu Route ile kullanıcı Girişi, Yeni Kullanıcı Kaydı, Parola Sıfırlama Yapıyoruz.
+ * Bu Route ile kullanıcı Girişi, Yeni Kullanıcı Kaydı Yapıyoruz.
  */
 Route::prefix('api')->controller(AuthController::class)->group(function(  ) {
 
@@ -33,9 +33,9 @@ Route::prefix('api')->controller(AuthController::class)->group(function(  ) {
  */
 Route::prefix('api')->middleware('auth:api')->controller(LocationItemsController::class)->group(function(  ) {
 
-    Route::post('/add-location', 'createLocation');
-    Route::post('/edit-location', 'updateLocation');
-    Route::post('/all-location-list', 'allListLocation');
+    Route::post('/add-location', 'createLocation')->name('createLocation');
+    Route::post('/edit-location', 'updateLocation')->name('updateLocation');
+    Route::get('/all-location-list', 'allListLocation')->name('allListLocation');
 
 });
 

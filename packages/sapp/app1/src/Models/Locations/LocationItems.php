@@ -1,6 +1,6 @@
 <?php
 
-namespace SAPP\APP1\Models\Models\Locations;
+namespace SAPP\APP1\Models\Locations;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
@@ -14,10 +14,7 @@ class LocationItems extends Model {
     protected $primaryKey = 'id';
     protected $table      = 'location_items';
     protected $guarded    = [];
-    protected $appends    = [
-        'create_at',
-        'update_at',
-    ];
+    protected $appends    = [];
 
     protected $fillable = [
         'id',
@@ -49,4 +46,4 @@ class LocationItems extends Model {
     ################################### PRIVATE FUNCTOIN ALANIMIZ ##################################################
 /** ---------------------------------------------------------------------------------------------------------------- **/
 
-}   /** end class MobileBlogItems extends Model **/
+}   /** end class LocationItems extends Model **/
