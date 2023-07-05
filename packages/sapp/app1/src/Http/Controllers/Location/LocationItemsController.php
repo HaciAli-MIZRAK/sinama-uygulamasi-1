@@ -77,4 +77,30 @@ class LocationItemsController extends BaseController {
 
     } /** end updateLocation( Request $request ) **/
 
+    /** ------------------------------------------------------------------------------------------------------------ **/
+
+    /**
+     * Bu function ile Konumu Detaylarını Alıyoruz..
+     */
+    public function detailLocation( Request $request ) {
+
+        $data = $this->locationItemsRepository->detailLocation( $request );
+
+        return response()->json($data);
+
+    } /** end detailLocation( Request $request ) **/
+
+    /** ------------------------------------------------------------------------------------------------------------ **/
+
+    /**
+     * Bu function ile İki Adresi Arasında Rota Çiziyoruz..
+     */
+    public function routeLocation( Request $request ) {
+
+        $data = $this->locationItemsRepository->routeLocation( $request );
+
+        return response()->json($data);
+
+    } /** end routeLocation( Request $request ) **/
+
 }   /** end class LocationItemsController extends BaseController **/
