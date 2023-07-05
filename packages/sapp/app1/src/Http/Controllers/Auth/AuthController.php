@@ -9,7 +9,6 @@ namespace SAPP\APP1\Http\Controllers\Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Validator;
 use SAPP\APP1\Http\Controllers\API\ApiBaseController AS BaseController;
 

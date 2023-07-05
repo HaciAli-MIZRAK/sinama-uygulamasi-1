@@ -13,24 +13,35 @@
 
 - Proje oluşturuldu paket haline getirildi ve laravel sistemine dahil edildi.
 
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-1.png" width="400" alt="Laravel Logo">
 
 - Paket özel bağımlılıkların yüklenmesi için composer.json dosyasına eklendi.
 
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-2.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-2.png" width="400" alt="Laravel Logo">
 
 - Proje için laravel üzerinden db oluşturma işlemi yapıldı.
 
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-3.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-3.png" width="400" alt="Laravel Logo">
 
 - Oluşturulan db mysql de göründü.
 
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-4.png" width="400" alt="Laravel Logo">
 
 - Proje Docker üzerinde çalışacak şekilde yapılandırıldı.
 
-<img src="https://sitatic.veritakip.net/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
 
+- Projeye ilk kullanıcı kaydı yapıldı.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-6.png" width="400" alt="Laravel Logo">
+
+- Projede ilk migrate yapıldı.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-7.png" width="400" alt="Laravel Logo">
+
+- passport install edildi.
+
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-8.png" width="400" alt="Laravel Logo">
 
 
 

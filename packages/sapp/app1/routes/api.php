@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use SAPP\APP1\Http\Controllers\Auth\AuthController;
+use SAPP\APP1\Http\Controllers\Location\LocationItemsController;
 
 /**
 |--------------------------------------------------------------------------
@@ -22,6 +23,19 @@ Route::prefix('api')->controller(AuthController::class)->group(function(  ) {
 
     Route::post('/login', 'loginApi')->name('login');
     Route::post('/register', 'createApi');
+
+});
+
+/** ---------------------------------------------------------------------------------------------------------------- **/
+
+/**
+ * Bu Route ile konum ekleme, konum düzenleme ve listeleme linklerini oluşturuyoruz.
+ */
+Route::prefix('api')->middleware('auth:api')->controller(LocationItemsController::class)->group(function(  ) {
+
+    Route::post('/add-location', 'createLocation')->name('createlocation');
+    Route::post('/edit-location', 'updateLocation')->name('updatelocation');
+    Route::post('/all-location-list', 'allListLocation')->name('alllistlocation');
 
 });
 
