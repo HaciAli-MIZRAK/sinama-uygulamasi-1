@@ -32,6 +32,13 @@
 <img src="https://sitatic.veritakip.net/uploads/app1-img/resim-5.png" width="400" alt="Laravel Logo">
 
 
+
+
+## Porje Takibi için yayınlandığı domain.
+
+<a href="https://crmx.com.tr/" target="_blank"><b>Canlı Takip Linki</b></a>
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
