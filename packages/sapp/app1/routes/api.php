@@ -37,6 +37,7 @@ Route::prefix('api')/*->middleware('auth:api')*/->controller(LocationItemsContro
     Route::post('/edit-location', 'updateLocation')->name('updateLocation');
     Route::get('/detail-location', 'detailLocation')->name('detailLocation');
     Route::get('/all-location-list', 'allListLocation')->name('allListLocation');
+    Route::post('/location-routes', 'locationRoutes')->name('locationRoutes');
 
 });
 

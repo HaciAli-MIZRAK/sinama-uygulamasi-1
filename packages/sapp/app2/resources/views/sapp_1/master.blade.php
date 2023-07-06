@@ -88,7 +88,8 @@
                                             Konum Seçin
                                         </option>
                                     </select>
-                                    <button class="btn btn-default" id="locationPolyline" style="position: absolute;top: 0;left: 415px;z-index: 100000;">Rota Çiz</button>
+                                    <button class="btn btn-default" id="locationRouting" style="position: absolute;top: 0;left: 415px;z-index: 100000;">Rota Çiz</button>
+                                    <button class="btn btn-default" id="locationPolyline" style="position: absolute;top: 0;left: 495px;z-index: 100000;">Polyline Rota Çiz</button>
                                 </div>
                             </div>
 

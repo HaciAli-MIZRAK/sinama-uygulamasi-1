@@ -204,14 +204,14 @@ class LocationItemsRepository extends BaseController {
     /**
      * Bu function ile İki Adresi Arasında Rota Çiziyoruz..
      */
-    public function routeLocation( $request ) {
+    public function locationRoutes( $request ) {
 
-        $validator = Validator::make($request->only('id', 'user_id'), [
-            'id'      => 'required|string',
-            'user_id' => 'required|string',
+        $validator = Validator::make($request->only('latlong1', 'latlong2'), [
+            'latlong1'  => 'required|string',
+            'latlong2' => 'required|string',
         ], [
-            'id.required'      => _text( 'Bu alan boş geçilemez!' ),
-            'user_id.required' => _text( 'Bu alan boş geçilemez!' ),
+            'latlong1.required'  => _text( 'Bu alan boş geçilemez!' ),
+            'latlong2.required' => _text( 'Bu alan boş geçilemez!' ),
         ]);
         if ($validator->fails()):
             $data = (object)[
@@ -224,9 +224,10 @@ class LocationItemsRepository extends BaseController {
             ];
             return $this->sendError('Validation Error.', $data);
         else:
-            $routes = LocationItems::where('id', $request->id)->first();
-            if ($routes):
-
+            if ($request->latlong1 || $request->latlong2):
+                $latLong1 = explode(',', $request->latlong1);
+                $latLong2 = explode(',', $request->latlong2);
+                $routes   = $this->serviceUrl($latLong1[0], $latLong1[1], $latLong2[0], $latLong2[1]);
                 return $this->sendResponse($routes, 'User register successfully.');
             else:
                 $data = (object)[
@@ -259,9 +260,9 @@ class LocationItemsRepository extends BaseController {
 
         //$distance = $response['routes'][0]['distance']; // metre
         //$duration = $response['routes'][0]['duration']; // saniye
-        //$route = $response['routes'][0]['geometry'];
+        $route = $response['routes'][0]['geometry'];
 
-        return $response;
+        return $this->pair($this->decode($route));
 
     } /** end serviceUrl( $latitude = null, $longitude = null ) **/
 

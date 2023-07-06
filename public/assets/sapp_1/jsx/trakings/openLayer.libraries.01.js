@@ -163,7 +163,7 @@ $.get('http://127.0.0.1:2222/api/all-location-list', {}, function( data ) {
     $('#locationsRoutesFirst').html(option);
     $('#locationsRoutesLast').html(option);
 });
-$('body').on('click', '#locationPolyline', function() {
+$('body').on('click', '#locationRouting', function() {
     const latlong1 = document.getElementById('locationsRoutesFirst').value.split(',');
     const latlong2 = document.getElementById('locationsRoutesLast').value.split(',');
     L.Routing.control({
@@ -172,6 +172,13 @@ $('body').on('click', '#locationPolyline', function() {
             L.latLng(parseFloat(latlong2[0]), parseFloat(latlong2[1]))
         ]
     }).addTo(map);
+});
+$('body').on('click', '#locationPolyline', function() {
+    const latlong1 = document.getElementById('locationsRoutesFirst').value;
+    const latlong2 = document.getElementById('locationsRoutesLast').value;
+    $.post('http://127.0.0.1:2222/api/location-routes', {latlong1: latlong1, latlong2: latlong2}, function( data ) {
+        new L.Polyline(data.original.data, { color: "#2a3561", weight: 5 }).addTo(map)
+    });
 });
 /*L.Routing.control({
     waypoints: [

@@ -82,6 +82,10 @@
 - Sisteme kayıt edilen konumlar seçilerek rota çizme işlemi yaptırıldı.
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-18.png" width="400" alt="Laravel Logo">
 
+- Sisteme kayıt edilen konumlar seçilerek rota çizme işlemi Polyline ile yaptırıldı.
+  <img src="https://www.crmx.com.tr/uploads/app1-img/resim-19.png" width="400" alt="Laravel Logo">
+
+
 ## Tüm Konumlar Listesi Eklendi.
 - Datatables tablo olarak.
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-16.png" width="400" alt="Laravel Logo">

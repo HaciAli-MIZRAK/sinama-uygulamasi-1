@@ -103,4 +103,18 @@ class LocationItemsController extends BaseController {
 
     } /** end routeLocation( Request $request ) **/
 
+    /** ------------------------------------------------------------------------------------------------------------ **/
+
+    /**
+     * Bu function ile İki Konum Arasına Rota Çiziyoruz..
+     */
+    public function locationRoutes( Request $request ) {
+
+        $data = $this->locationItemsRepository->locationRoutes( $request );
+
+        return response()->json($data);
+
+    } /** end locationRoutes( Request $request ) **/
+
+
 }   /** end class LocationItemsController extends BaseController **/
