@@ -78,6 +78,17 @@
                             <div class="row">
                                 <div class="col-lg-12 col-xs-12 col-sm-12">
                                     <div id="maps-panele"></div>
+                                    <select class="form-control" id="locationsRoutesFirst" style="position: absolute;width: 200px;top: 0;left: 0;z-index: 100000;">
+                                        <option value="-">
+                                            Konum Seçin
+                                        </option>
+                                    </select>
+                                    <select class="form-control" id="locationsRoutesLast" style="position: absolute;width: 200px;top: 0;left: 205px;z-index: 100000;">
+                                        <option value="-">
+                                            Konum Seçin
+                                        </option>
+                                    </select>
+                                    <button class="btn btn-default" id="locationPolyline" style="position: absolute;top: 0;left: 415px;z-index: 100000;">Rota Çiz</button>
                                 </div>
                             </div>
 

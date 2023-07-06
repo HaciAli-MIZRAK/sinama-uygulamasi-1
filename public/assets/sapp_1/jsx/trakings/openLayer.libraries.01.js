@@ -139,7 +139,6 @@ L.control.fullscreen({
 
 $.get('http://127.0.0.1:2222/api/all-location-list', function( data ) {
     for (var i = 0; i < data.data.length; i++) {
-        console.log(data.data[i].lacation_title);
         marker = new L.marker([data.data[i].latitude, data.data[i].longitude])
             .bindPopup(data.data[i].location_title)
             .addTo(map);
@@ -156,12 +155,30 @@ function animateUpdate() {
     }
 }
 
-L.Routing.control({
+$.get('http://127.0.0.1:2222/api/all-location-list', {}, function( data ) {
+    var option = '';
+    for(var i = 0;i < data.data.length;i++) {
+        option += `<option value="${data.data[i].latitude + ',' + data.data[i].longitude}">${data.data[i].location_title}</option>`;
+    }
+    $('#locationsRoutesFirst').html(option);
+    $('#locationsRoutesLast').html(option);
+});
+$('body').on('click', '#locationPolyline', function() {
+    const latlong1 = document.getElementById('locationsRoutesFirst').value.split(',');
+    const latlong2 = document.getElementById('locationsRoutesLast').value.split(',');
+    L.Routing.control({
+        waypoints: [
+            L.latLng(parseFloat(latlong1[0]), parseFloat(latlong1[1])),
+            L.latLng(parseFloat(latlong2[0]), parseFloat(latlong2[1]))
+        ]
+    }).addTo(map);
+});
+/*L.Routing.control({
     waypoints: [
         L.latLng(38.225425134685004, 26.807283314743785),
         L.latLng(38.20060041838293, 26.8464113317394)
     ]
-}).addTo(map);
+}).addTo(map);*/
 /*var deger = [[38.22516,26.80666],[38.22422,26.80721],[38.22376,26.80921],[38.22157,26.80957],[38.21853,26.81195],[38.21741,26.81367],[38.21691,26.81601],[38.21758,26.81742],[38.21654,26.82229],[38.21811,26.82453],[38.21837,26.82695],[38.20172,26.83286],[38.20515,26.8317],[38.20696,26.83598],[38.20519,26.83835],[38.20415,26.8405],[38.20101,26.84372],[38.20194,26.84473],[38.20227,26.84668],[38.2006,26.8464]];
 let coordinates = deger;
 new L.Polyline(coordinates, { color: "#2a3561", weight: 5 }).addTo(map);*/
