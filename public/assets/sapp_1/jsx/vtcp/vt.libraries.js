@@ -207,7 +207,7 @@ const vtPanel = {
                                    </div>
                                    <div class="clearfix"></div>`;
                         } else {
-                            return '<div class="col-md-6"><i class="fa fa-edit"></i></div><div class="col-md-6"><i class="fa fa-trash ClearAjax"></i></div>';
+                            return '<div class="col-md-6"><a><i class="fa fa-edit" data-location-id="' + data + '" id="updateModalButton"></i></a></div><div class="col-md-6"><i class="fa fa-trash ClearAjax"></i></div>';
                         }
                     }
                 }

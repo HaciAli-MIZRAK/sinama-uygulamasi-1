@@ -95,13 +95,13 @@ class LocationItemsController extends BaseController {
     /**
      * Bu function ile İki Adresi Arasında Rota Çiziyoruz..
      */
-    public function routeLocation( Request $request ) {
+    public function locationShow( Request $request ) {
 
-        $data = $this->locationItemsRepository->routeLocation( $request );
+        $data = $this->locationItemsRepository->locationShow( $request );
 
         return response()->json($data);
 
-    } /** end routeLocation( Request $request ) **/
+    } /** end locationShow( Request $request ) **/
 
     /** ------------------------------------------------------------------------------------------------------------ **/
 

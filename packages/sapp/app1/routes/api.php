@@ -38,6 +38,7 @@ Route::prefix('api')/*->middleware('auth:api')*/->controller(LocationItemsContro
     Route::get('/detail-location', 'detailLocation')->name('detailLocation');
     Route::get('/all-location-list', 'allListLocation')->name('allListLocation');
     Route::post('/location-routes', 'locationRoutes')->name('locationRoutes');
+    Route::post('/location-show/{id?}', 'locationShow')->name('locationShow');
 
 });
 

@@ -202,6 +202,46 @@ class LocationItemsRepository extends BaseController {
     /** ------------------------------------------------------------------------------------------------------------ **/
 
     /**
+     * Bu function ile Mevcut Konumu Düzenleme Paneline Gönderiyoruz..
+     */
+    public function locationShow( $request ) {
+
+        $validator = Validator::make($request->only('id'), [
+            'id'      => 'required|string',
+        ], [
+            'id.required'      => _text( 'Bu alan boş geçilemez!' ),
+        ]);
+        if ($validator->fails()):
+            $data = (object)[
+                'title'             => _text( 'Sistem mesajı!' ),
+                'text'              => $validator->messages()->first(),
+                'icon'              => 'danger',
+                'buttonsStyling'    => '!1',
+                'confirmButtonText' => _text( 'Tamam' ),
+                'status'            => 'not'
+            ];
+            return $this->sendError('Validation Error.', $data);
+        else:
+            $show = LocationItems::where('id', $request->id)->first();
+            if ($show):
+                return $this->sendResponse($show, 'User register successfully.');
+            else:
+                $data = (object)[
+                    'title'             => _text( 'Sistem mesajı!' ),
+                    'text'              => _text( 'Bir sorun oluştur tekrar deneyin.' ),
+                    'icon'              => 'warning',
+                    'buttonsStyling'    => '!1',
+                    'confirmButtonText' => _text( 'Tamam' ),
+                ];
+                return $this->sendError('Register Error.', $data);
+            endif;
+        endif;
+
+    } /** end locationShow( Request $request ) **/
+
+    /** ------------------------------------------------------------------------------------------------------------ **/
+
+    /**
      * Bu function ile İki Adresi Arasında Rota Çiziyoruz..
      */
     public function locationRoutes( $request ) {

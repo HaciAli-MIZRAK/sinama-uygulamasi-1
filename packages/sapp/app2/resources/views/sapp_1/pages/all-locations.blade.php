@@ -61,6 +61,11 @@
         </div>
     </div>
 
+    @if(View::exists('sApp::' . $pageItems->adminThemes . '.modals.update-locations-modals'))
+        @include( 'sApp::' . $pageItems->adminThemes . '.modals.update-locations-modals')
+        @yield( 'update-locations-modals' )
+    @endif
+
 @endsection
 
 @section( 'modul-all-locations-jsx' )
@@ -130,6 +135,14 @@
         };
 
         vtPanel.globalDataTables( '#users-items', '{!! route( 'allListLocation' ) !!}', {'status': '1', 'type': '1'}, columns, true, 0, dtButtonText );
+        $('body').on('click', '#updateModalButton', function() {
+            $('#updateModalPanel').modal('show');
+            $.post('{{ route( 'locationShow' ) }}', {id: this.dataset.locationId}, function( data ) {
+                $.each(data.original.data, function( key, value ) {
+                    $('#' + key + '-input').val(value);
+                });
+            });
+        });
     </script>
 
 @endsection
