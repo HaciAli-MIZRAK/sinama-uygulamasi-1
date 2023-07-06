@@ -93,6 +93,10 @@
 - Konum Düzenlemek için modal eklendi veriler çekildi.
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-20.png" width="400" alt="Laravel Logo">
 
+- Konum Düzenleme işlemi tamamlandı.
+  <img src="https://www.crmx.com.tr/uploads/app1-img/resim-21.png" width="400" alt="Laravel Logo">
+
+
 ## Yeni Konumlar Ekleme Paneli.
 - Basit bir yeni konum ekleme paneli eklendi.
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-17.png" width="400" alt="Laravel Logo">
