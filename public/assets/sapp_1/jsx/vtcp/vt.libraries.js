@@ -164,7 +164,7 @@ const vtPanel = {
             },
             'ajax': {
                 'url': url,
-                'type': 'POST',
+                'type': 'GET',
                 'data': dataSet,
             },
             'columns': columns,
@@ -207,7 +207,7 @@ const vtPanel = {
                                    </div>
                                    <div class="clearfix"></div>`;
                         } else {
-                            return 'Menu Ekle';
+                            return '<div class="col-md-6"><i class="fa fa-edit"></i></div><div class="col-md-6"><i class="fa fa-trash ClearAjax"></i></div>';
                         }
                     }
                 }

@@ -5,6 +5,7 @@ namespace SAPP\APP1\Models\Locations;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use SAPP\APP1\Models\UsersItems;
 
 class LocationItems extends Model {
 
@@ -14,7 +15,9 @@ class LocationItems extends Model {
     protected $primaryKey = 'id';
     protected $table      = 'location_items';
     protected $guarded    = [];
-    protected $appends    = [];
+    protected $appends    = [
+        'create_at'
+    ];
 
     protected $fillable = [
         'id',
@@ -38,6 +41,16 @@ class LocationItems extends Model {
     ####################################### ATTRIBUTE ALANIMIZ #####################################################
 /** ---------------------------------------------------------------------------------------------------------------- **/
 
+    /**
+     * 1.
+     * Bu function ile Tarih Formatını Düzenliyoruz.
+     */
+    public function getCreateAtAttribute(  ) {
+
+        return Carbon::parse($this->created_at)->translatedFormat('d F Y');
+
+    } /** end getCreateAtAttribute(  ) **/
+
 /** ---------------------------------------------------------------------------------------------------------------- **/
     #################################### SCOPE FUNCTOIN ALANIMIZ ###################################################
 /** ---------------------------------------------------------------------------------------------------------------- **/
@@ -45,5 +58,9 @@ class LocationItems extends Model {
 /** ---------------------------------------------------------------------------------------------------------------- **/
     ################################### PRIVATE FUNCTOIN ALANIMIZ ##################################################
 /** ---------------------------------------------------------------------------------------------------------------- **/
+
+    public function userName() {
+        return $this->hasOne(UsersItems::class, 'id', 'user_id');
+    }
 
 }   /** end class LocationItems extends Model **/

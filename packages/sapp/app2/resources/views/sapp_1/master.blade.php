@@ -135,12 +135,14 @@
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/datatables.min.js' ) }}" type="text/javascript"></script>
 
         <!-- MAPS PANEL -->
+        @if(request()->segment(2) == NULL)
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/leaflets/leaflet.js' ) }}" type="text/javascript"></script>
         <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mapbox-polyline/1.1.1/polyline.min.js"></script>
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/leaflets/Leaflet.fullscreen.min.js' ) }}" type="text/javascript"></script>
         <script src="{{ URL::asset( 'assets/sapp_1/jsx/trakings/openLayer.libraries.01.js' ) . '?date=' . date('H-i') }}" type="text/javascript"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+        @endif
 
         @if(request()->segment(2) != NULL && request()->segment(1) != 'edits')
             <script>

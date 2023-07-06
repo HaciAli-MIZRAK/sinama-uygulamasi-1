@@ -26,7 +26,7 @@ class LocationItemsRepository extends BaseController {
      */
     public function allListLocation( $request ) {
 
-        $data = LocationItems::query();
+        $data = LocationItems::query()->with('userName');
 
         return $data;
 

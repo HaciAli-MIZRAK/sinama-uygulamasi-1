@@ -38,7 +38,7 @@ Route::get('/route', function() {
 /**
  * Bu function ile hazır servis kullanarak İki adres/kordinat arasındaki Rotayı Çiziyoruz.
  */
-function decode( $string ) {
+/*function decode( $string ) {
 
     $points = array();
     $index = $i = 0;
@@ -66,7 +66,7 @@ function decode( $string ) {
 /**
  * Bu function ile oluşturduğumuz rota koordinatlarını enlem, boylam şeklinde her biri array olacak şekilde parçalıyoruz.
  */
-function pair( $list ) {
+/*function pair( $list ) {
 
     return is_array($list) ? array_chunk($list, 2) : array();
 
