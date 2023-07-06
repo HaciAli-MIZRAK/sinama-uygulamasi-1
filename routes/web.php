@@ -14,9 +14,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-/*Route::get('/', function () {
+Route::get('/', function () {
     return view('welcome');
-});*/
+});
 
 Route::get('/route', function() {
     $a = '26.807283314743785,38.225425134685004'; // boylam,enlem
@@ -66,7 +66,7 @@ Route::get('/route', function() {
 /**
  * Bu function ile oluşturduğumuz rota koordinatlarını enlem, boylam şeklinde her biri array olacak şekilde parçalıyoruz.
  */
-/*function pair( $list ) {
+/**function pair( $list ) {
 
     return is_array($list) ? array_chunk($list, 2) : array();
 

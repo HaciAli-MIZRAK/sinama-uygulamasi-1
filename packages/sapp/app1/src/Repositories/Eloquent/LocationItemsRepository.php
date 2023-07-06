@@ -39,7 +39,7 @@ class LocationItemsRepository extends BaseController {
      */
     public function createLocation( $request ) {
 
-        $validator = Validator::make($request->only('user_id', 'location_title', 'longitude', 'latitude', 'marker_colored'), [
+        $validator = Validator::make($request->only('location_title', 'longitude', 'latitude', 'marker_colored'), [
             'location_title' => 'required|string|min:3|max:255',
             'longitude'      => 'required|string',
             'latitude'       => 'required|string',
@@ -65,7 +65,7 @@ class LocationItemsRepository extends BaseController {
             return $this->sendError('Validation Error.', $data);
         else:
             $create = LocationItems::create([
-                'user_id'        => $request->user_id,
+                'user_id'        => 1,
                 'location_title' => $request->location_title,
                 'longitude'      => $request->longitude,
                 'latitude'       => $request->latitude,
