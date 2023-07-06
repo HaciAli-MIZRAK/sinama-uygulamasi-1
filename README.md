@@ -94,7 +94,7 @@
 <img src="https://www.crmx.com.tr/uploads/app1-img/resim-20.png" width="400" alt="Laravel Logo">
 
 - Konum Düzenleme işlemi tamamlandı.
-  <img src="https://www.crmx.com.tr/uploads/app1-img/resim-21.png" width="400" alt="Laravel Logo">
+<img src="https://www.crmx.com.tr/uploads/app1-img/resim-21.png" width="400" alt="Laravel Logo">
 
 
 ## Yeni Konumlar Ekleme Paneli.
