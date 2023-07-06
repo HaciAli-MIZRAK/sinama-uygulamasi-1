@@ -128,7 +128,7 @@ class LocationItemsRepository extends BaseController {
             return $this->sendError('Validation Error.', $data);
         else:
             $create = LocationItems::where('id', $request->id)->update([
-                'user_id'        => $request->user_id,
+                'user_id'        => 1,
                 'location_title' => $request->location_title,
                 'longitude'      => $request->longitude,
                 'latitude'       => $request->latitude,

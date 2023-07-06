@@ -15,6 +15,9 @@
         .img-thumbnail {
             width: 95px!important;
         }
+        .swal2-container {
+            z-index: 1000000;
+        }
     </style>
 
 @endsection
@@ -70,6 +73,7 @@
 
 @section( 'modul-all-locations-jsx' )
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="{!! URL::asset( 'assets/sapp_1/jsx/datatables.min.js' ) !!}" type="text/javascript"></script>
     <script>
         const columns = [
@@ -141,6 +145,52 @@
                 $.each(data.original.data, function( key, value ) {
                     $('#' + key + '-input').val(value);
                 });
+            });
+        });
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                'Accept': 'application/json'
+            }
+        });
+        /**
+         * Bu kısımda formunu post ediyoruz.
+         */
+        $(document).ready(function(){
+            $('#updateModalPanel form#updateLocationForm').validate({
+                submitHandler: function (form) {
+                    console.log("click");
+                    var formArray = new FormData(form);
+                    $('#page-loader').show();
+                    $.ajax({
+                        type: 'POST',
+                        url: $(form).attr('action'),
+                        data: formArray,
+                        cache: false,
+                        contentType: false,
+                        processData: false,
+                        success: function (data2) {
+                            const data = data2.original.data;
+                            $('#page-loader').hide();
+                            tables.ajax.reload(null, false);
+                            Swal.fire({
+                                title: data.title,
+                                text: data.text,
+                                icon: data.icon,
+                                confirmButtonColor: data.color,
+                                confirmButtonText: globalText.dataset.globalSweetalertConfirmbuttonText,
+                            });
+                        },
+                        error: function (data) {
+                            console.log("error");
+                            console.log(data);
+                        }
+                    });
+
+                    $(form).submit(function (e) {
+                        e.preventDefault();
+                    });
+                }
             });
         });
     </script>
